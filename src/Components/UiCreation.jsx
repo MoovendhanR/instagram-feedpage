@@ -1,10 +1,25 @@
 
 import React from 'react';
 import { PieChart, Pie} from 'recharts';
+import { Chart } from "react-google-charts";
+
 const UiCreation = () => {
     const data = [
         {name: 'Geek-o-mania', students: 1000}
       ];
+      const data1 = [
+        ["Year", "Students"],
+        ["2013", 1000, 400],
+        ["2014", 1170, 460],
+        ["2015", 660, 1120],
+        ["2016", 1030, 540],
+      ];
+      const options = {
+   isStacked: true,
+  height: 250,
+  legend: { position: "top", maxLines: 2 },
+  vAxis: { minValue: 0 },
+      };
         
   return (
     <>
@@ -33,7 +48,16 @@ const UiCreation = () => {
                   </PieChart>
                   <p style={{ color: 'green'}}>⬛Submitted<span style={{ color: 'blue'}}>⬛Pending Submissions</span></p>
               </div>
-              <div>     
+              <div>  
+                <h2>Day-wise submissions</h2> 
+        <Chart
+      chartType="AreaChart"
+      width="100%"
+      height="250px"
+      data={data1}
+      options={options}
+    />
+
               </div>
         </div>
         <br />
@@ -68,12 +92,43 @@ const UiCreation = () => {
           <td>a month ago</td>
           <td>80%</td>
           <td>44%</td>
-        </tr>
-       
+        </tr>  
       </table>
         </div>
-        <div></div>
+        <h2 style={{marginRight:"75%"}}>Submissions</h2>
+        <div className="inner-cont5">
+             <table>
+        <tr>
+          <th>Name</th>
+          <th>Submission Status</th>
+          <th>Grading Status</th>
+          <th>Submission Date</th>
+          <th>Actions</th>
+         
+          
+        </tr>
+        <tr>
+        <td>Will Kinsman</td>
+          <td style={{backgroundColor:"green",borderRadius:"10px",textAlign:"center",color:"white"}}>Submitted</td>
+          <td style={{backgroundColor:"grey",borderRadius:"10px",textAlign:"center",color:"white"}}>Pending</td>
+          <td>a month ago</td>      
+          <td>
+            <button style={{backgroundColor:"green",borderRadius:"10px",textAlign:"center",color:"white",border:"none",padding:"3px"}}>Download Keylogs</button><button style={{backgroundColor:"blue",borderRadius:"10px",textAlign:"center",color:"white",border:"none",padding:"3px"}}>Show Submission</button>
+          </td>
+        </tr>  
+        <tr>
+          <td>Traceveg 653</td>
+          <td style={{backgroundColor:"green",borderRadius:"10px",textAlign:"center",color:"white"}}>Submitting</td>
+          <td style={{backgroundColor:"grey",borderRadius:"10px",textAlign:"center",color:"white"}}>Pending</td>
+          <td>6 hours ago</td>
+          <td><button style={{backgroundColor:"green",borderRadius:"10px",textAlign:"center",color:"white",border:"none",padding:"3px"}}>Download Keylogs</button><button style={{backgroundColor:"blue",borderRadius:"10px",textAlign:"center",color:"white",border:"none",padding:"3px"}}>Show Submission</button>
+</td>
+        </tr>
+      </table>
+        </div>
        </div>
+
+     
     </>
   )
 }
