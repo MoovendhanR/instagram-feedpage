@@ -44,3 +44,14 @@ h1{
     width: 48%;
     border:1px solid grey;
 }
+.inner-cont4 {
+    width: 90%;
+    height:200px;
+    border-radius: 10px;
+   border: 1px solid grey;
+
+}
+
+td,th{
+    padding:10px;
+}
