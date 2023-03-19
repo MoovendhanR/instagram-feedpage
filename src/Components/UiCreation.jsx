@@ -8,11 +8,11 @@ const UiCreation = () => {
         {name: 'Geek-o-mania', students: 1000}
       ];
       const data1 = [
-        ["Year", "Students"],
-        ["2013", 1000, 400],
-        ["2014", 1170, 460],
-        ["2015", 660, 1120],
-        ["2016", 1030, 540],
+        ["Year", "Students","col"],
+        ["2/3/2023",0,100],
+        ["",0,0],
+        ["",0,100],
+        ["27/1/23",0,0],
       ];
       const options = {
    isStacked: true,
@@ -53,7 +53,7 @@ const UiCreation = () => {
         <Chart
       chartType="AreaChart"
       width="100%"
-      height="250px"
+      height="200px"
       data={data1}
       options={options}
     />
