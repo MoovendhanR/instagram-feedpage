@@ -1,0 +1,161 @@
+.post-main{
+    width:90%;
+}
+.post{
+    flex:4;
+    margin-left: 265px !important;
+    width: 60%;
+    margin: auto;
+    overflow-x: auto;
+}
+.post::-webkit-scrollbar {
+    display: none;
+}
+.stories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.stories>div>div>:nth-child(1){
+    background: linear-gradient(to bottom, #ff0000, #0000ff); /* Define your gradient colors here */
+    border-radius: 50%;
+    border: 3px solid red;
+}
+.stories>div>:nth-child(2){
+  font-size: medium;
+}
+
+
+
+.storie-button{
+    display: flex;
+    justify-content: space-between;
+}
+.storie-button button{
+    border:none;
+    border-radius: 50%;
+    background-color:rgb(249, 246, 246);
+    height: 30px;
+    color:gray;
+   
+}
+
+.storie-button>:nth-child(1){
+    position: absolute; /* set button to an absolute position */
+    top: 10%; /* adjust the top position of the button */
+    right: 78%; /* adjust the left position of the button */
+    transform: translate(-50%, -50%); /* center the button */
+}
+.storie-button>:nth-child(2){
+  position: absolute; /* set button to an absolute position */
+  top: 10%; /* adjust the top position of the button */
+  left: 67.5%; /* adjust the left position of the button */
+  transform: translate(-50%, -50%); /* center the button */
+  
+ }
+
+ /* profile */
+ .profile-p{
+     width: 70%;
+     margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.5rem;
+ }
+
+.profile-container>:nth-child(1){
+    border-radius: 50%;
+}
+
+.profile-container>:nth-child(2){
+   padding-left: 1rem;
+}
+ .grey{
+    color:grey;
+ }
+ .profile-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+ }
+
+ /* post body */
+ .postbody{
+    width:60%;
+    margin: auto;
+ }
+ .post-img{
+    width:70%;
+    margin: auto;
+    height: 500px;
+   
+ }
+ .post-img img{
+    object-fit: cover;
+    height: 500px;
+    width: 100%;
+ }
+
+ .post-b-icons{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .post-b-icons>:nth-child(1){
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+ }
+
+ .post-liked{
+    width: 70%;
+    margin:auto;
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+    align-items: center;
+ }
+ .post-liked img{
+    scale: 0.5;
+    border-radius: 50%;
+ }
+
+ .post-commend{
+   
+    width: 70%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+ }
+
+
+ .post-commend>:nth-child(1){
+    border: none;
+    color:grey;
+ }
+
+ .post-commend>:nth-child(2){
+    border: none;
+    color:grey;
+ }
+
+ .all-commends{
+    width: 70%;
+    margin:auto;
+ }
+
+ .post-commend~hr{
+    width: 70%;
+    margin:auto;
+    padding-bottom: 0.5rem;
+ }

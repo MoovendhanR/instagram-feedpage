@@ -1,0 +1,82 @@
+.sidebar{
+    flex:2;
+    top: 0;
+    border-right: 1px solid rgb(217, 211, 211);
+    padding: 2rem 5rem 0rem 1rem;
+    height: 100vh;
+    position: fixed;
+}
+.sidebar-logos{
+    display:flex;
+    justify-content: center;
+    margin-top: 2rem;
+
+}
+
+.sidebar-icons{
+    display: flex;
+    flex-direction:column;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+/* }
+.sidebar-icons > div>:nth-child(1){
+    /* padding: 0.5rem; */
+}
+.sidebar-span{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: medium;
+    justify-content:space-evenly;
+}
+
+
+.sidebar-icons > div>:nth-child(2){
+    /* padding: 2rem; */
+    /* padding: 0 0.5rem 1rem 1rem; */
+   margin-top: 100px;
+}
+
+.sidebar>div img{
+    border-radius:50%;
+    scale: 1.5;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.2rem;
+    gap: 15px;
+    font-size: large;
+
+}
+/* 
+.sidebar-icons span{
+    margin-top: auto;
+} */
+/* .flex{
+    display:flex;
+    justify-content:space-between
+} 
+*/
+
+.more-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 4.5rem;
+    gap: 15px;
+    font-size: large;
+
+    margin-top: 11rem;
+}
+.last-logo{
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-end;
+    align-items: flex-end;
+    
+}
